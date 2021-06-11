@@ -1,6 +1,0 @@
-https://makebot.kro.kr/main.html
-https://makebot.kro.kr/project.html
-https://makebot.kro.kr/notice.html
-https://makebot.kro.kr/github.html
-https://makebot.kro.kr/inquiry.html
-https://makebot.kro.kr/sns.html
