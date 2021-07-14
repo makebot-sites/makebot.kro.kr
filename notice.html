@@ -67,7 +67,7 @@
       var inner_html = '<tr><th>&nbsp;&nbsp;&nbsp;id&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;writer&nbsp;&nbsp;&nbsp;</th></tr>';
       var notice_tr_html = [];
       for (var x = 0; x < titles.length; x++) {
-        notice_tr_html.push("<tr><td>" + String(ids[x]) + "</td><td><a style='color: #ffffff;font-size: 30px;' href='javascript:open_notice_page(" + String(ids[x]) + ");'>" + String(titles[x]) + "</a></td><td>" + String(dates[x]) + "</td><td>" + String(writers[x]) + "</td></a></tr>");
+        notice_tr_html.push("<tr><td>" + String(ids[x]) + "</td><td><a style='color: #000000;font-size: 30px;' href='javascript:open_notice_page(" + String(ids[x]) + ");'>" + String(titles[x]) + "</a></td><td>" + String(dates[x]) + "</td><td>" + String(writers[x]) + "</td></a></tr>");
       }
       for (x = 0; x < notice_tr_html.length; x++) {
         inner_html = inner_html + notice_tr_html[x];
