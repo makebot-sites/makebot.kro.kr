@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197566674-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-197566674-3');
+</script>
+    <meta charset="utf-8">
+    <title>makebot</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src='https://makebot.kro.kr/notice_list.js'></script>
+    <style>
+      #title {
+        background-color: #000000; color: #ffffff;
+      }
+      a {
+        text-decoration: none;
+      }
+      table, tr, th, td {
+        border: solid 5px #000000;
+        border-collapse: collapse;
+        color: #000000;
+        font-size: 70px;
+        padding: 5px;
+    </style>
+  </head>
+  <body style="background-color: #ffffff; font-size: 100px; color:#000000;" display: inline;>
+    <div id='title'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="main.html" style="color:white;">makebot</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="menu.html"><img src="menu_icon.png" width="130px"></a></div>
+<table id='notice_list_table'>
+      <tr><th>id</th><th>title</th><th>date</th></tr>
+    </table>
+    <script>
+      var notice_table = document.getElementById('notice_list_table');
+      var inner_html = '<tr><th>id</th><th>title</th><th>date</th></tr>';
+      var notice_tr_html = [];
+      for (var x = 0; x < titles.length; x++) {
+        notice_tr_html.push("<tr><td>" + String(ids[x]) + "</td><td><a style='color: #000000;font-size: 70px;' href='javascript:open_notice_page(" + String(ids[x]) + ");'>" + String(titles[x]) + "</a></td><td>" + String(dates[x]) + "</td></tr>");
+      }
+      for (x = 0; x < notice_tr_html.length; x++) {
+        inner_html = inner_html + notice_tr_html[x];
+      }
+      notice_table.innerHTML = inner_html;
+
+      function open_notice_page(id) {
+        window.open('http://makebot.kro.kr/notice/' + String(id), id, "width = 700, height = 500");
+      }
+    </script>
+    <!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "d2560d7d-d472-437d-8b0c-35b6e4dbb1bb"
+  });
+</script>
+<!-- End Channel Plugin -->
+  </body>
+</html>
