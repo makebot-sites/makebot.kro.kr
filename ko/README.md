@@ -1,1 +1,1 @@
-# makebot.kro.kr
+# makebot.kro.kr/ko
