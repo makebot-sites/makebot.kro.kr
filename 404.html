@@ -198,7 +198,7 @@ body {
 			</div>
 			<h2>the page you requested could not found</h2>
 			<form class="notfound-search">
-				<input type="text" id="search_text_input" placeholder="Search...">
+				<input type="text" onkeyup="enterkey();" id="search_text_input" placeholder="Search...">
 				<button type="button" onclick="button_click();"><span></span></button>
 			</form>
 		</div>
@@ -209,6 +209,13 @@ function button_click() {
   link = "https://www.google.co.kr/search?as_sitesearch=makebot.kro.kr&q="+search_value;
   location.href = link;
 }
+	
+function enterkey() {
+  if (window.event.keyCode == 13) {
+    button_click();
+  }
+}
+
 </script>
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
