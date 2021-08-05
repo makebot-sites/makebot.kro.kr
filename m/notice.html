@@ -46,26 +46,6 @@
     </style>
   </head>
   <body style="background-color: #ffffff; font-size: 100px; color:#000000;" display: inline;>
-    <div id='title'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="main.html" style="color:white;">makebot</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="menu.html"><img src="menu_icon.png" width="130px"></a></div>
-<table id='notice_list_table'>
-      <tr><th>id</th><th>title</th><th>date</th></tr>
-    </table>
-    <script>
-      var notice_table = document.getElementById('notice_list_table');
-      var inner_html = '<tr><th>id</th><th>title</th><th>date</th></tr>';
-      var notice_tr_html = [];
-      for (var x = 0; x < titles.length; x++) {
-        notice_tr_html.push("<tr><td>" + String(ids[x]) + "</td><td><a style='color: #000000;font-size: 70px;' href='javascript:open_notice_page(" + String(ids[x]) + ");'>" + String(titles[x]) + "</a></td><td>" + String(dates[x]) + "</td></tr>");
-      }
-      for (x = 0; x < notice_tr_html.length; x++) {
-        inner_html = inner_html + notice_tr_html[x];
-      }
-      notice_table.innerHTML = inner_html;
-
-      function open_notice_page(id) {
-        window.open('http://makebot.kro.kr/notice/' + String(id), id, "width = 700, height = 500");
-      }
-    </script>
     <!-- Channel Plugin Scripts -->
 <script>
   (function() {
@@ -108,5 +88,25 @@
   });
 </script>
 <!-- End Channel Plugin -->
+    <div id='title'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="main.html" style="color:white;">makebot</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="menu.html"><img src="menu_icon.png" width="130px"></a></div>
+<table id='notice_list_table'>
+      <tr><th>id</th><th>title</th><th>date</th></tr>
+    </table>
+    <script>
+      var notice_table = document.getElementById('notice_list_table');
+      var inner_html = '<tr><th>id</th><th>title</th><th>date</th></tr>';
+      var notice_tr_html = [];
+      for (var x = 0; x < titles.length; x++) {
+        notice_tr_html.push("<tr><td>" + String(ids[x]) + "</td><td><a style='color: #000000;font-size: 70px;' href='javascript:open_notice_page(" + String(ids[x]) + ");'>" + String(titles[x]) + "</a></td><td>" + String(dates[x]) + "</td></tr>");
+      }
+      for (x = 0; x < notice_tr_html.length; x++) {
+        inner_html = inner_html + notice_tr_html[x];
+      }
+      notice_table.innerHTML = inner_html;
+
+      function open_notice_page(id) {
+        window.open('http://makebot.kro.kr/notice/' + String(id), id, "width = 700, height = 500");
+      }
+    </script>
   </body>
 </html>
