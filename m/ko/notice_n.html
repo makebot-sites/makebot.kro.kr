@@ -50,7 +50,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
 <!-- end custom head snippets -->
-
+    <style>
+      table, tr, th, td {
+        border: solid 5px #000000;
+        border-collapse: collapse;
+        color: #000000;
+        font-size: 20px;
+        padding: 5px;
+    </style>
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
@@ -60,7 +67,7 @@
 <!-- Channel Plugin Scripts -->
 <script> (function() { var w = window; if (w.ChannelIO) { return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.'); } var ch = function() { ch.c(arguments); }; ch.q = []; ch.c = function(args) { ch.q.push(args); }; w.ChannelIO = ch; function l() { if (w.ChannelIOInitialized) { return; } w.ChannelIOInitialized = true; var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js'; s.charset = 'UTF-8'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (document.readyState === 'complete') { l(); } else if (window.attachEvent) { window.attachEvent('onload', l); } else { window.addEventListener('DOMContentLoaded', l, false); window.addEventListener('load', l, false); } })(); ChannelIO('boot', { "pluginKey": "d0db722f-2852-4830-ba72-2e0edb781ae5" });</script>
 <!-- End Channel Plugin -->
-    <div id='title'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="main.html" style="color:white;">makebot</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="menu.html"><img src="menu_icon.png" width="130px"></a></div><table id='notice_list_table'> <tr><th>id</th><th>제목</th><th>날짜</th></tr> </table> <script> var notice_table = document.getElementById('notice_list_table'); var inner_html = '<tr><th>id</th><th>제목</th><th>날짜</th></tr>'; var notice_tr_html = []; for (var x = 0; x < titles.length; x++) { notice_tr_html.push("<tr><td>" + String(ids[x]) + "</td><td><a style='color: #000000;font-size: 70px;' href='javascript:open_notice_page(" + String(ids[x]) + ");'>" + String(titles[x]) + "</a></td><td>" + String(dates[x]) + "</td></tr>"); } for (x = 0; x < notice_tr_html.length; x++) { inner_html = inner_html + notice_tr_html[x]; } notice_table.innerHTML = inner_html; function open_notice_page(id) { window.open('https://makebot.kro.kr/ko/notice/' + String(id), id, "width = 700, height = 500"); } </script>
+    <table id='notice_list_table'> <tr><th>id</th><th>제목</th><th>날짜</th></tr> </table> <script> var notice_table = document.getElementById('notice_list_table'); var inner_html = '<tr><th>id</th><th>제목</th><th>날짜</th></tr>'; var notice_tr_html = []; for (var x = 0; x < titles.length; x++) { notice_tr_html.push("<tr><td>" + String(ids[x]) + "</td><td><a style='color: #000000;font-size: 70px;' href='javascript:open_notice_page(" + String(ids[x]) + ");'>" + String(titles[x]) + "</a></td><td>" + String(dates[x]) + "</td></tr>"); } for (x = 0; x < notice_tr_html.length; x++) { inner_html = inner_html + notice_tr_html[x]; } notice_table.innerHTML = inner_html; function open_notice_page(id) { window.open('https://makebot.kro.kr/ko/notice/' + String(id), id, "width = 700, height = 500"); } </script>
     <div>© 2021 makebot. Email : daehan@makebot.ml</div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
