@@ -24,7 +24,30 @@
 
 <!-- Setup Google Analytics -->
 
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAA8dvIvVDvqfop_jL08O9oY6m89y45Wyw",
+    authDomain: "makebot-accounts.firebaseapp.com",
+    databaseURL: "https://makebot-accounts-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "makebot-accounts",
+    storageBucket: "makebot-accounts.appspot.com",
+    messagingSenderId: "518830719396",
+    appId: "1:518830719396:web:7ffbc941bb281f491b0131",
+    measurementId: "G-3SC0GBEVSR"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 <!-- You can set your favicon here -->
     <link rel="shortcut icon" href="/ws/favicon.ico" type="image/x-icon">
@@ -48,7 +71,7 @@
 <input type="password" id="ac_pw" placeholder="비밀번호"><br>
 <input type="checkbox" id="agreetermsbox"><a href="terms.html"> 사용방침</a>에 동의<br>
 <input type="checkbox" id="agreepimtermsbox"><a href="psimterms.html"> 개인정보처리방침</a>에 동의<br>
-<input type="checkbox" id="emailok" disabled="disabled"> <input type="button" id="ac_oathemail_btn" value="Email인증"><br>
+<input type="checkbox" id="emailok" disabled="disabled"> <input type="button" id="ac_emailok_btn" value="Email인증"><br>
 <input type="button" id="ac_btn" value="회원가입"><br>
 </h3>
 © 2021 makebot. Email : daehan@makebot.ml
