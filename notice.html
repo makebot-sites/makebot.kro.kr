@@ -1,7 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>makebot</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="makebot" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://makebot.kro.kr" />
+<meta property="og:url" content="https://makebot.kro.kr" />
+<meta property="og:site_name" content="makebot" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="makebot" />
+<script type="application/ld+json">
+{"url":"https://makebot.kro.kr","headline":"makebot","@type":"WebSite","name":"makebot","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="https://makebot-sites.github.io/TEST-MOBILE/assets/css/style.css?v=cd5cc2fee9e1f57a611449d865e42137fa2468c3">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197566674-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -11,8 +33,8 @@
   gtag('config', 'UA-197566674-1');
 </script>
 
-    <meta charset="utf-8">
-    <title>makebot</title>
+
+<!-- You can set your favicon here -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -27,103 +49,24 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <style>
-      #title_txt {
-        font-size: 50px;
-        font-weight: bold;
-        color: #ffffff;
-      }
-      .site_menu {
-        font-size: 30px;
-        font-weight: bold;
-        color: #ffffff;
-        text-decoration: none;
-        display: inline;
-      }
+    <script src='https://makebot.kro.kr/notice_list.js'></script>
+<!-- end custom head snippets -->
 
-      table, tr, th, td {
-        border: solid 1px #000000;
-        border-collapse: collapse;
-        color: #000000;
-        font-size: 30px;
-        padding: 5px;
-      }
-    </style>
-    <script src='notice_list.js'></script>
   </head>
-  <body style='background-color: #000000; font-family: sans-serif; display: inline;'>
-    <a href='http://makebot.kro.kr/main' style='text-decoration: none; color: #ffffff'><img src='makebot_icon.png' width='75px' style='float: left; margin-right: 5px; margin-left: 20px; margin-top: 25px; clear: both;'>
-    <div id='title_txt'>&nbsp;makebot</a>&nbsp;&nbsp;<a href='project.html' class='site_menu'>&nbsp;project&nbsp;&#124;</a><a href='notice.html' class='site_menu'>&nbsp;notice&nbsp;</a><a href='https://docs.makebot.kro.kr/' class='site_menu'>&#124;&nbsp;documents</a><a href='inquiry.html' class='site_menu'>&nbsp;&#124;&nbsp;inquiry&nbsp;&#124;</a><a href='github.html' class='site_menu'>&nbsp;github&nbsp;&#124;</a><a href='sns.html' class='site_menu'>&nbsp;SNS&nbsp;</a></div><br></div>
-    <hr><div style='background-color: #ffffff; color: #000000;'><br>
-    <table id='notice_list_table'>
-      <tr><th>&nbsp;&nbsp;&nbsp;id&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;writer&nbsp;&nbsp;&nbsp;</th></tr>
-    </table>
-  <br></div><hr>
-    <script>
-      var notice_table = document.getElementById('notice_list_table');
-      var inner_html = '<tr><th>&nbsp;&nbsp;&nbsp;id&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;writer&nbsp;&nbsp;&nbsp;</th></tr>';
-      var notice_tr_html = [];
-      for (var x = 0; x < titles.length; x++) {
-        notice_tr_html.push("<tr><td>" + String(ids[x]) + "</td><td><a style='color: #000000;font-size: 30px;' href='javascript:open_notice_page(" + String(ids[x]) + ");'>" + String(titles[x]) + "</a></td><td>" + String(dates[x]) + "</td><td>" + String(writers[x]) + "</td></a></tr>");
-      }
-      for (x = 0; x < notice_tr_html.length; x++) {
-        inner_html = inner_html + notice_tr_html[x];
-      }
-      notice_table.innerHTML = inner_html;
-    </script>
-    <div style='font-size: 20px; color: #ffffff;'>© 2021 makebot. Email : daehan@makebot.ml&nbsp; <a href='http://m.makebot.kro.kr/main' style='text-decoration: none; color: #ffffff; font-weight: bold;'>mobile page</a>&nbsp&#124;&nbsp;<a href='http://xn--h32bk3c07nokj.xn--yq5b.xn--3e0b707e/' style='text-decoration: none; color: #ffffff; font-weight: bold;'>Korean page</a>&nbsp&#124;&nbsp;<a href='javascript:open_subscribe_newsletter_page();' style='text-decoration: none; color: #ffffff; font-weight: bold;'>subscribe newsletter</a></div>
-    <script>
-      function open_subscribe_newsletter_page() {
-        window.open('newsletter_subscribe_popup.html', 'subscribe makebot newsletter', "width = 700, height = 500")
-      }
-      function open_notice_page(id) {
-        window.open('http://makebot.kro.kr/notice/' + String(id), id, "width = 700, height = 500");
-      }
-    </script>
-  <!-- Channel Plugin Scripts -->
-<script>
-  (function() {
-    var w = window;
-    if (w.ChannelIO) {
-      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
-    }
-    var ch = function() {
-      ch.c(arguments);
-    };
-    ch.q = [];
-    ch.c = function(args) {
-      ch.q.push(args);
-    };
-    w.ChannelIO = ch;
-    function l() {
-      if (w.ChannelIOInitialized) {
-        return;
-      }
-      w.ChannelIOInitialized = true;
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-      s.charset = 'UTF-8';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    }
-    if (document.readyState === 'complete') {
-      l();
-    } else if (window.attachEvent) {
-      window.attachEvent('onload', l);
-    } else {
-      window.addEventListener('DOMContentLoaded', l, false);
-      window.addEventListener('load', l, false);
-    }
-  })();
-  ChannelIO('boot', {
-    "pluginKey": "d0db722f-2852-4830-ba72-2e0edb781ae5"
-  });
-</script>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      <h1 id="test-mobile"><a href="main.html" style="color: #000000;">makebot</a>&nbsp&nbsp&nbsp<div style="font-size: 15px;"><a href="http://projects.makebot.kro.kr/" style="color: #000000;">projects</a> | <a href="notice.html" style="color: #000000;">notice</a> | <a href="https://docs.makebot.kro.kr/" style="color: #000000;">document</a> | <a href="https://www.youtube.com/channel/UCFDGPqBnP9-0wGn9q6BDFWw" style="color: #000000;"><img src="https://makebot.kro.kr/youtube.png" width="15px"></a> <a href="https://www.instagram.com/makebot.lab/" style="color: #000000;"><img src="https://makebot.kro.kr/instagram.png" width="15px"></a> <a href="https://facebook.com/makebot.maker" style="color: #000000;"><img src="https://makebot.kro.kr/facebook.png" width="15px"></a></div></h1>
+<!-- Channel Plugin Scripts -->
+<script> (function() { var w = window; if (w.ChannelIO) { return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.'); } var ch = function() { ch.c(arguments); }; ch.q = []; ch.c = function(args) { ch.q.push(args); }; w.ChannelIO = ch; function l() { if (w.ChannelIOInitialized) { return; } w.ChannelIOInitialized = true; var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js'; s.charset = 'UTF-8'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (document.readyState === 'complete') { l(); } else if (window.attachEvent) { window.attachEvent('onload', l); } else { window.addEventListener('DOMContentLoaded', l, false); window.addEventListener('load', l, false); } })(); ChannelIO('boot', { "pluginKey": "d0db722f-2852-4830-ba72-2e0edb781ae5" });</script>
 <!-- End Channel Plugin -->
+    <table id='notice_list_table'> <tr><th>id</th><th>title</th><th>date</th></tr> </table> <script> var notice_table = document.getElementById('notice_list_table'); var inner_html = '<tr><th>id</th><th>title</th><th>date</th></tr>'; var notice_tr_html = []; for (var x = 0; x < titles.length; x++) { notice_tr_html.push("<tr><td>" + String(ids[x]) + "</td><td><a style='color: #000000;font-size: 20px;' href='javascript:open_notice_page(" + String(ids[x]) + ");'>" + String(titles[x]) + "</a></td><td>" + String(dates[x]) + "</td></tr>"); } for (x = 0; x < notice_tr_html.length; x++) { inner_html = inner_html + notice_tr_html[x]; } notice_table.innerHTML = inner_html; function open_notice_page(id) { window.open('https://makebot.kro.kr/notice/' + String(id), id, "width = 700, height = 500"); } </script>
+    <div>© 2021 makebot. Email : daehan@makebot.ml | <a href="https://makebot.kro.kr/ko/main" style="color: #000000;">한국어</a></div>
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
   </body>
 </html>
