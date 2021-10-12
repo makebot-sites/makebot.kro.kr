@@ -4,5 +4,4 @@ const firebaseConfig = {
   projectId: p
 };
 
-require("firebase/firestore");
 var db = firebase.firestore();
