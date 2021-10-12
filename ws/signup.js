@@ -1,7 +1,7 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyAA8dvIvVDvqfop_jL08O9oY6m89y45Wyw",
-  authDomain: "makebot-accounts.firebaseapp.com",
-  projectId: "makebot-accounts"
+  apiKey: k,
+  authDomain: d,
+  projectId: p
 };
 
 const firebase = require("firebase");
